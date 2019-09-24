@@ -1,11 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TableRow
-        android:layout_alignBottom="@+id/null"
-        android:layout_marginBottom="0dp">
-        layout_width: sajsajas</TableRow>
-    <SeekBar android: />
-    <TextView />
-</RelativeLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/MySeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:max="100" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <Button
+            android:id="@+id/buttonGiam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reduce" />
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Progress level"
+            android:background="@android:color/transparent" />
+
+
+        <Button
+            android:id="@+id/buttonTang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNhap"
+        android:text="Input"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
